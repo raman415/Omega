@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "971105431419",
+    "firebase_url": "https://omega-b1c05.firebaseio.com",
+    "project_id": "omega-b1c05",
+    "storage_bucket": "omega-b1c05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971105431419:android:b28babf9eaa515f4",
+        "android_client_info": {
+          "package_name": "com.newproject.omega"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971105431419-i3dlsnu1qfkscopcls0n4ku3gs0r5e3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADRLCNGj0cOCKFXjYb_JxtS_yOLPg8ny0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971105431419-i3dlsnu1qfkscopcls0n4ku3gs0r5e3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDescriptionFragment">
+
+    <TextView
+        android:id="@+id/product_descriptionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#000000"
+        android:text="Selon Scott Forstall, ancien responsable iOS, la raison est liée au moment où les produits sont dévoilés lors des célèbres keynotes d'Apple: Nous concevons les keynotes de manière à ce que la présentation du produit ait lieu environ 40 minutes après la présentation, a déclaré Forstall. . Lorsque la grande image du produit apparaît à l'écran, nous voulons que l'heure affichée soit proche de l'heure réelle sur les montres du public. Mais nous savons que nous n’atteindrons pas exactement 40 minutes.  " />
+
+
+</FrameLayout>

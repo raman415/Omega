@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item 
+            android:id="@+id/nav_myMall"
+            android:icon="@mipmap/sharp_store_mall_directory_black_48dp"
+            android:title="My Mall"
+            />
+        <item
+            android:id="@+id/nav_myOrders"
+            android:icon="@mipmap/sharp_local_mall_black_48dp"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_myRewards"
+            android:icon="@mipmap/round_card_giftcard_black_48dp"
+            android:title="My Rewards" />
+        <item
+            android:id="@+id/nav_myCart"
+            android:icon="@mipmap/baseline_local_grocery_store_black_48dp"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_myWishlist"
+            android:icon="@mipmap/sharp_favorite_black_48dp"
+            android:title="My Wishlist"/>
+        <item
+            android:id="@+id/nav_myAccount"
+            android:icon="@mipmap/round_account_box_black_48dp"
+            android:title="My Account"/>
+
+         </group>
+    <item
+        android:id="@+id/nav_mySignOut"
+        android:icon="@mipmap/baseline_power_settings_new_black_48dp"
+        android:title="Sign Out" />
+
+
+</menu>

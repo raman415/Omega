@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/wish_product_image"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s8phone" />
+
+    <TextView
+        android:id="@+id/wish_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Samsung S9+"
+        android:textColor="#000000"
+        android:textSize="16sp"
+
+        app:layout_constraintStart_toEndOf="@+id/wish_product_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- i have used ImageView tint attribute is not working
+    then i came to know that im using v7 library so that
+    why some compatiblty issues occurs-->
+
+    <android.support.v7.widget.AppCompatImageView
+
+        android:id="@+id/Wishfree_coupen_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:tint="#8000ff"
+        app:layout_constraintBottom_toBottomOf="@+id/Wishtv_free_coupon"
+        app:layout_constraintStart_toStartOf="@+id/wish_product_title"
+        app:layout_constraintTop_toTopOf="@+id/Wishtv_free_coupon"
+        app:srcCompat="@mipmap/round_local_offer_black_48dp" />
+
+    <TextView
+        android:id="@+id/Wishtv_free_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free 2 Coupens"
+        android:textColor="#8000ff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Wishfree_coupen_icon"
+        app:layout_constraintTop_toBottomOf="@+id/wish_product_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="@color/succesGreen"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/wish_product_image"
+        app:layout_constraintTop_toBottomOf="@+id/Wishtv_free_coupon">
+
+        <TextView
+            android:id="@+id/Wishtv_productRating_miniView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="4.5"
+            android:textColor="@color/colorPrimary"
+
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@mipmap/round_star_black_48dp"
+            android:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/WishtotalRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(25) Ratings"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/wishProduct_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="$1500/-"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/wish_product_image"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/wish_cutted_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 1700/-"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/wishProduct_price"
+        app:layout_constraintStart_toEndOf="@+id/wishProduct_price" />
+
+    <View
+        android:id="@+id/wish_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+
+
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="@+id/wish_cutted_price"
+        app:layout_constraintEnd_toEndOf="@+id/wish_cutted_price"
+        app:layout_constraintStart_toStartOf="@+id/wish_cutted_price"
+        app:layout_constraintTop_toTopOf="@+id/wish_cutted_price" />
+
+    <TextView
+        android:id="@+id/payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+
+
+        android:text="Cash on delivery available"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/wishProduct_price"
+        app:layout_constraintTop_toBottomOf="@+id/wishProduct_price" />
+
+    <ImageButton
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/baseline_delete_black_48dp" />
+
+
+</android.support.constraint.ConstraintLayout>

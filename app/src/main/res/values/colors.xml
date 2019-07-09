@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="newBarColor">#5B04B1</color>
+    <color name="pureWhite">#ffffff</color>
+    <color name="colorPrimary">#e8e8e8</color>
+    <color name="colorPrimaryDark">#fff973</color>
+    <color name="colorAccent">#fffacd</color>
+    <color name="btnColor">#EF5350</color>
+    <color name="casualColor">#ee6002</color>
+    <color name="warningRed">#B00020</color>
+    <color name="succesGreen">#11a10c</color>
+    <color name="recyclerViewBackground">#d6d6d6</color>
+    <color name="txtBlue">#0336ff</color>
+    <color name="toolBarRed">#CC0000</color>
+</resources>
